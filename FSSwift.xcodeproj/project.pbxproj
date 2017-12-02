@@ -14,6 +14,12 @@
 		5C1EAF581FD24E0500331E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1EAF561FD24E0500331E03 /* LaunchScreen.storyboard */; };
 		5C1EAF631FD24E0500331E03 /* FSSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF621FD24E0500331E03 /* FSSwiftTests.swift */; };
 		5C1EAF6E1FD24E0500331E03 /* FSSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF6D1FD24E0500331E03 /* FSSwiftUITests.swift */; };
+		5C1EAF801FD2507500331E03 /* FSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF7F1FD2507500331E03 /* FSTabBarController.swift */; };
+		5C1EAF841FD2529D00331E03 /* FSBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF831FD2529D00331E03 /* FSBaseController.swift */; };
+		5C1EAF861FD2538000331E03 /* FSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF851FD2538000331E03 /* FSHomeController.swift */; };
+		5C1EAF881FD253E100331E03 /* FSSecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF871FD253E100331E03 /* FSSecondController.swift */; };
+		5C1EAF8A1FD2540A00331E03 /* FSKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF891FD2540A00331E03 /* FSKit.swift */; };
+		5C1EAF8D1FD25E0400331E03 /* FSMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF8C1FD25E0400331E03 /* FSMeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		5C1EAF691FD24E0500331E03 /* FSSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1EAF6D1FD24E0500331E03 /* FSSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSSwiftUITests.swift; sourceTree = "<group>"; };
 		5C1EAF6F1FD24E0500331E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1EAF7F1FD2507500331E03 /* FSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTabBarController.swift; sourceTree = "<group>"; };
+		5C1EAF831FD2529D00331E03 /* FSBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSBaseController.swift; sourceTree = "<group>"; };
+		5C1EAF851FD2538000331E03 /* FSHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSHomeController.swift; sourceTree = "<group>"; };
+		5C1EAF871FD253E100331E03 /* FSSecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSSecondController.swift; sourceTree = "<group>"; };
+		5C1EAF891FD2540A00331E03 /* FSKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSKit.swift; sourceTree = "<group>"; };
+		5C1EAF8C1FD25E0400331E03 /* FSMeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		5C1EAF4C1FD24E0500331E03 /* FSSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5C1EAF7B1FD2501200331E03 /* Components */,
 				5C1EAF4D1FD24E0500331E03 /* AppDelegate.swift */,
 				5C1EAF4F1FD24E0500331E03 /* ViewController.swift */,
 				5C1EAF511FD24E0500331E03 /* Main.storyboard */,
@@ -123,6 +136,59 @@
 				5C1EAF6F1FD24E0500331E03 /* Info.plist */,
 			);
 			path = FSSwiftUITests;
+			sourceTree = "<group>";
+		};
+		5C1EAF7B1FD2501200331E03 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5C1EAF8B1FD25DE300331E03 /* Me */,
+				5C1EAF821FD2528600331E03 /* First */,
+				5C1EAF811FD2528600331E03 /* Second */,
+				5C1EAF7D1FD2504000331E03 /* Base */,
+				5C1EAF7E1FD2504000331E03 /* Public */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5C1EAF7D1FD2504000331E03 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5C1EAF7F1FD2507500331E03 /* FSTabBarController.swift */,
+				5C1EAF831FD2529D00331E03 /* FSBaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5C1EAF7E1FD2504000331E03 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				5C1EAF891FD2540A00331E03 /* FSKit.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		5C1EAF811FD2528600331E03 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				5C1EAF871FD253E100331E03 /* FSSecondController.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		5C1EAF821FD2528600331E03 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				5C1EAF851FD2538000331E03 /* FSHomeController.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		5C1EAF8B1FD25DE300331E03 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				5C1EAF8C1FD25E0400331E03 /* FSMeController.swift */,
+			);
+			path = Me;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1EAF501FD24E0500331E03 /* ViewController.swift in Sources */,
+				5C1EAF841FD2529D00331E03 /* FSBaseController.swift in Sources */,
+				5C1EAF881FD253E100331E03 /* FSSecondController.swift in Sources */,
+				5C1EAF861FD2538000331E03 /* FSHomeController.swift in Sources */,
+				5C1EAF801FD2507500331E03 /* FSTabBarController.swift in Sources */,
 				5C1EAF4E1FD24E0500331E03 /* AppDelegate.swift in Sources */,
+				5C1EAF8D1FD25E0400331E03 /* FSMeController.swift in Sources */,
+				5C1EAF8A1FD2540A00331E03 /* FSKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
