@@ -39,8 +39,7 @@ class FSTabBarController: UITabBarController {
             myNavigation.tabBarItem.selectedImage = UIImage.init(named: selects[x])?.withRenderingMode(.alwaysOriginal)
             vcs.append(myNavigation)
             
-            let attributes = [NSAttributedStringKey.foregroundColor: color,
-                               NSAttributedStringKey.font: UIFont(name: "Heiti SC", size: 24.0)!]
+            let attributes = [NSAttributedStringKey.foregroundColor: color]
             myNavigation.tabBarItem.setTitleTextAttributes(attributes , for: UIControlState.selected)
         }
         viewControllers = vcs
