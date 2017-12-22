@@ -27,7 +27,7 @@ class FSMeController: FSBaseController,UITableViewDelegate,UITableViewDataSource
         if _tableView == nil {
             navigationItem.title = "我"
             let bbi = UIBarButtonItem.init(title: "设置", style: .plain, target: self, action: #selector(setAction))
-            bbi.tintColor = UIColor.red
+            bbi.tintColor = AppColor_Red
             navigationItem.rightBarButtonItem = bbi
             
             _tableView = UITableView.init(frame: CGRect.zero, style: .plain)

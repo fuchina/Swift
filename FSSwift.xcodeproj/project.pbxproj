@@ -20,6 +20,8 @@
 		5C1EAF881FD253E100331E03 /* FSSecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF871FD253E100331E03 /* FSSecondController.swift */; };
 		5C1EAF8A1FD2540A00331E03 /* FSKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF891FD2540A00331E03 /* FSKit.swift */; };
 		5C1EAF8D1FD25E0400331E03 /* FSMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EAF8C1FD25E0400331E03 /* FSMeController.swift */; };
+		5C25C6211FECB855000C6381 /* FSAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25C6201FECB855000C6381 /* FSAppConfig.swift */; };
+		5C25C6231FECB9DD000C6381 /* FSMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25C6221FECB9DD000C6381 /* FSMail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		5C1EAF871FD253E100331E03 /* FSSecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSSecondController.swift; sourceTree = "<group>"; };
 		5C1EAF891FD2540A00331E03 /* FSKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSKit.swift; sourceTree = "<group>"; };
 		5C1EAF8C1FD25E0400331E03 /* FSMeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMeController.swift; sourceTree = "<group>"; };
+		5C25C6201FECB855000C6381 /* FSAppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSAppConfig.swift; sourceTree = "<group>"; };
+		5C25C6221FECB9DD000C6381 /* FSMail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSMail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 		5C1EAF7B1FD2501200331E03 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5C25C61F1FECB838000C6381 /* Config */,
 				5C1EAF8B1FD25DE300331E03 /* Me */,
 				5C1EAF821FD2528600331E03 /* First */,
 				5C1EAF811FD2528600331E03 /* Second */,
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				5C1EAF891FD2540A00331E03 /* FSKit.swift */,
+				5C25C6221FECB9DD000C6381 /* FSMail.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -189,6 +195,14 @@
 				5C1EAF8C1FD25E0400331E03 /* FSMeController.swift */,
 			);
 			path = Me;
+			sourceTree = "<group>";
+		};
+		5C25C61F1FECB838000C6381 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5C25C6201FECB855000C6381 /* FSAppConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,10 +341,12 @@
 			files = (
 				5C1EAF501FD24E0500331E03 /* ViewController.swift in Sources */,
 				5C1EAF841FD2529D00331E03 /* FSBaseController.swift in Sources */,
+				5C25C6211FECB855000C6381 /* FSAppConfig.swift in Sources */,
 				5C1EAF881FD253E100331E03 /* FSSecondController.swift in Sources */,
 				5C1EAF861FD2538000331E03 /* FSHomeController.swift in Sources */,
 				5C1EAF801FD2507500331E03 /* FSTabBarController.swift in Sources */,
 				5C1EAF4E1FD24E0500331E03 /* AppDelegate.swift in Sources */,
+				5C25C6231FECB9DD000C6381 /* FSMail.swift in Sources */,
 				5C1EAF8D1FD25E0400331E03 /* FSMeController.swift in Sources */,
 				5C1EAF8A1FD2540A00331E03 /* FSKit.swift in Sources */,
 			);

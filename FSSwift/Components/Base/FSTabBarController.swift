@@ -12,12 +12,42 @@ class FSTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabDesignViews()
+        createMainFrameWork()
+//        tabDesignViews()
+    }
+    
+    func createMainFrameWork() -> Void {
+        let count = titles.count
+        var vcs = Array() as [UINavigationController]
+        for x in 0...count-1 {
+            var controller : FSBaseController?
+            var type : UITabBarSystemItem!
+            if x == 0 {
+                controller = FSHomeController()
+                type = UITabBarSystemItem.mostViewed
+            }else if x == 1 {
+                controller = FSSecondController()
+                type = UITabBarSystemItem.favorites
+            }else if x == 2 {
+                controller = FSMeController()
+                type = UITabBarSystemItem.contacts
+            }
+            
+            let myNavigation = UINavigationController.init(rootViewController: controller!)
+            let tbi = UITabBarItem.init(tabBarSystemItem: type, tag: x)
+            tbi.setValue(titles[x], forKeyPath: "_title")
+            UITabBar.appearance().tintColor = AppColor_Red
+            
+            myNavigation.tabBarItem = tbi
+            vcs.append(myNavigation)
+        }
+        viewControllers = vcs
     }
     
     let titles = ["首页","分页","我"]
     let unselects = ["tab_home_unselect","tab_second_unselect","tab_third_unselect"]
     let selects = ["tab_home_select","tab_second_select","tab_third_select"]
+    
     let color = FSKit.rgbColor(r: 2, g: 195, b: 134, a: 1)
     func tabDesignViews() -> Void {
         view.backgroundColor = UIColor.white

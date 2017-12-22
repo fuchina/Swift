@@ -12,7 +12,6 @@ class FSBaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.backgroundColor = FSKit.rgbColor(r: 246, g: 246, b: 246, a: 1)
         // Do any additional setup after loading the view.
     }

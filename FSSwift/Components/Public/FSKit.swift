@@ -52,4 +52,9 @@ class FSKit: NSObject {
         controller.addAction(archAction)
         return controller;
     }
+    
+//    open class func clearPasteboard() -> Void {
+//        let pasteboard = UIPasteboard()
+//
+//    }
 }
